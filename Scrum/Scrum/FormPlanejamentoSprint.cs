@@ -39,7 +39,7 @@ namespace Scrum
 
         private void btnToBacklog_Click(object sender, EventArgs e)
         {
-            PartView.Transferir(parteSprintBacklog, parteProductBacklog); ç
+            PartView.Transferir(parteSprintBacklog, parteProductBacklog); çç
         }
 
         private void pnlProductBacklog_Enter(object sender, EventArgs e)
