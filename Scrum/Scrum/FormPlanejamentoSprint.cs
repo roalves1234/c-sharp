@@ -12,7 +12,7 @@ using Scrum.Model;
 
 namespace Scrum
 {
-    public partial class FormPlanejamentoSprint : Form
+    public partial class FormPlanejamentoSprint : Form //## este form trabalha com...
     {
         PartView parteProductBacklog;
         PartView parteSprintBacklog;
@@ -39,7 +39,7 @@ namespace Scrum
 
         private void btnToBacklog_Click(object sender, EventArgs e)
         {
-            PartView.Transferir(parteSprintBacklog, parteProductBacklog); çç
+            PartView.Transferir(parteSprintBacklog, parteProductBacklog); 
         }
 
         private void pnlProductBacklog_Enter(object sender, EventArgs e)
