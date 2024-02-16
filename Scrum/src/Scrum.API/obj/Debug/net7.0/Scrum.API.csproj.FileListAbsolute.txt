@@ -1,0 +1,11 @@
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.API\bin\Debug\net7.0\Scrum.API.deps.json
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.API\bin\Debug\net7.0\Scrum.API.dll
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.API\bin\Debug\net7.0\Scrum.API.pdb
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.API\obj\Debug\net7.0\Scrum.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.API\obj\Debug\net7.0\Scrum.API.AssemblyInfoInputs.cache
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.API\obj\Debug\net7.0\Scrum.API.AssemblyInfo.cs
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.API\obj\Debug\net7.0\Scrum.API.csproj.CoreCompileInputs.cache
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.API\obj\Debug\net7.0\Scrum.API.dll
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.API\obj\Debug\net7.0\refint\Scrum.API.dll
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.API\obj\Debug\net7.0\Scrum.API.pdb
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.API\obj\Debug\net7.0\ref\Scrum.API.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Rodrigo\\Dropbox\\curso c#\\Senac.EShop\\src\\Senac.eShop.Application\\Senac.eShop.Application.csproj": {}
+    "D:\\Rodrigo\\GitHub\\c-sharp\\Senac.EShop\\src\\Senac.eShop.Application\\Senac.eShop.Application.csproj": {}
   },
   "projects": {
-    "D:\\Rodrigo\\Dropbox\\curso c#\\Senac.EShop\\src\\Senac.eShop.Application\\Senac.eShop.Application.csproj": {
+    "D:\\Rodrigo\\GitHub\\c-sharp\\Senac.EShop\\src\\Senac.eShop.Application\\Senac.eShop.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Rodrigo\\Dropbox\\curso c#\\Senac.EShop\\src\\Senac.eShop.Application\\Senac.eShop.Application.csproj",
+        "projectUniqueName": "D:\\Rodrigo\\GitHub\\c-sharp\\Senac.EShop\\src\\Senac.eShop.Application\\Senac.eShop.Application.csproj",
         "projectName": "Senac.eShop.Application",
-        "projectPath": "D:\\Rodrigo\\Dropbox\\curso c#\\Senac.EShop\\src\\Senac.eShop.Application\\Senac.eShop.Application.csproj",
+        "projectPath": "D:\\Rodrigo\\GitHub\\c-sharp\\Senac.EShop\\src\\Senac.eShop.Application\\Senac.eShop.Application.csproj",
         "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
-        "outputPath": "D:\\Rodrigo\\Dropbox\\curso c#\\Senac.EShop\\src\\Senac.eShop.Application\\obj\\",
+        "outputPath": "D:\\Rodrigo\\GitHub\\c-sharp\\Senac.EShop\\src\\Senac.eShop.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

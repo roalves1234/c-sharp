@@ -1,0 +1,11 @@
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\bin\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.deps.json
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\bin\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.dll
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\bin\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.pdb
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.AssemblyInfoInputs.cache
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.AssemblyInfo.cs
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.csproj.CoreCompileInputs.cache
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.dll
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\refint\Scrum.Infra.CrossCutting.IoC.dll
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.pdb
+D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\ref\Scrum.Infra.CrossCutting.IoC.dll

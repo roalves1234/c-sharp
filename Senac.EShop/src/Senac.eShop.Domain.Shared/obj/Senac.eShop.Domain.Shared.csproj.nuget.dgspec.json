@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Rodrigo\\Dropbox\\curso c#\\Senac.EShop\\src\\Senac.eShop.Domain.Shared\\Senac.eShop.Domain.Shared.csproj": {}
+    "D:\\Rodrigo\\GitHub\\c-sharp\\Senac.EShop\\src\\Senac.eShop.Domain.Shared\\Senac.eShop.Domain.Shared.csproj": {}
   },
   "projects": {
-    "D:\\Rodrigo\\Dropbox\\curso c#\\Senac.EShop\\src\\Senac.eShop.Domain.Shared\\Senac.eShop.Domain.Shared.csproj": {
+    "D:\\Rodrigo\\GitHub\\c-sharp\\Senac.EShop\\src\\Senac.eShop.Domain.Shared\\Senac.eShop.Domain.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Rodrigo\\Dropbox\\curso c#\\Senac.EShop\\src\\Senac.eShop.Domain.Shared\\Senac.eShop.Domain.Shared.csproj",
+        "projectUniqueName": "D:\\Rodrigo\\GitHub\\c-sharp\\Senac.EShop\\src\\Senac.eShop.Domain.Shared\\Senac.eShop.Domain.Shared.csproj",
         "projectName": "Senac.eShop.Domain.Shared",
-        "projectPath": "D:\\Rodrigo\\Dropbox\\curso c#\\Senac.EShop\\src\\Senac.eShop.Domain.Shared\\Senac.eShop.Domain.Shared.csproj",
+        "projectPath": "D:\\Rodrigo\\GitHub\\c-sharp\\Senac.EShop\\src\\Senac.eShop.Domain.Shared\\Senac.eShop.Domain.Shared.csproj",
         "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
-        "outputPath": "D:\\Rodrigo\\Dropbox\\curso c#\\Senac.EShop\\src\\Senac.eShop.Domain.Shared\\obj\\",
+        "outputPath": "D:\\Rodrigo\\GitHub\\c-sharp\\Senac.EShop\\src\\Senac.eShop.Domain.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Rodrigo\\Dropbox\\curso c#\\Senac.EShop\\src\\Senac.eShop.Infra.CrossCutting.IoC\\Senac.eShop.Infra.CrossCutting.IoC.csproj": {}
+    "D:\\Rodrigo\\GitHub\\c-sharp\\Senac.EShop\\src\\Senac.eShop.Infra.CrossCutting.IoC\\Senac.eShop.Infra.CrossCutting.IoC.csproj": {}
   },
   "projects": {
-    "D:\\Rodrigo\\Dropbox\\curso c#\\Senac.EShop\\src\\Senac.eShop.Infra.CrossCutting.IoC\\Senac.eShop.Infra.CrossCutting.IoC.csproj": {
+    "D:\\Rodrigo\\GitHub\\c-sharp\\Senac.EShop\\src\\Senac.eShop.Infra.CrossCutting.IoC\\Senac.eShop.Infra.CrossCutting.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Rodrigo\\Dropbox\\curso c#\\Senac.EShop\\src\\Senac.eShop.Infra.CrossCutting.IoC\\Senac.eShop.Infra.CrossCutting.IoC.csproj",
+        "projectUniqueName": "D:\\Rodrigo\\GitHub\\c-sharp\\Senac.EShop\\src\\Senac.eShop.Infra.CrossCutting.IoC\\Senac.eShop.Infra.CrossCutting.IoC.csproj",
         "projectName": "Senac.eShop.Infra.CrossCutting.IoC",
-        "projectPath": "D:\\Rodrigo\\Dropbox\\curso c#\\Senac.EShop\\src\\Senac.eShop.Infra.CrossCutting.IoC\\Senac.eShop.Infra.CrossCutting.IoC.csproj",
+        "projectPath": "D:\\Rodrigo\\GitHub\\c-sharp\\Senac.EShop\\src\\Senac.eShop.Infra.CrossCutting.IoC\\Senac.eShop.Infra.CrossCutting.IoC.csproj",
         "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
-        "outputPath": "D:\\Rodrigo\\Dropbox\\curso c#\\Senac.EShop\\src\\Senac.eShop.Infra.CrossCutting.IoC\\obj\\",
+        "outputPath": "D:\\Rodrigo\\GitHub\\c-sharp\\Senac.EShop\\src\\Senac.eShop.Infra.CrossCutting.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

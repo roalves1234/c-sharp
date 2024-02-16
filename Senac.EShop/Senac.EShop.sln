@@ -19,19 +19,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{5F280FF1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testes", "Testes", "{E201C8BC-F826-4B0A-8E5A-9752801B7310}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senac.eShop.Infra.Data", "src\Senac.eShop.Infra.Data\Senac.eShop.Infra.Data.csproj", "{8BFFFB95-3965-4F6E-9FED-BD1D1649573A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senac.eShop.Infra.Data", "src\Senac.eShop.Infra.Data\Senac.eShop.Infra.Data.csproj", "{8BFFFB95-3965-4F6E-9FED-BD1D1649573A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senac.eShop.Infra.CrossCutting.IoC", "src\Senac.eShop.Infra.CrossCutting.IoC\Senac.eShop.Infra.CrossCutting.IoC.csproj", "{E0872C7F-74DE-4988-8A6C-F3CEAF597921}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senac.eShop.Infra.CrossCutting.IoC", "src\Senac.eShop.Infra.CrossCutting.IoC\Senac.eShop.Infra.CrossCutting.IoC.csproj", "{E0872C7F-74DE-4988-8A6C-F3CEAF597921}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senac.eShop.Domain", "src\Senac.eShop.Domain\Senac.eShop.Domain.csproj", "{FAEA4B6B-4339-4B69-AD3A-9891A68C58F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senac.eShop.Domain", "src\Senac.eShop.Domain\Senac.eShop.Domain.csproj", "{FAEA4B6B-4339-4B69-AD3A-9891A68C58F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senac.eShop.Application", "src\Senac.eShop.Application\Senac.eShop.Application.csproj", "{FDD7FA7E-6D4A-44A8-849A-0EC49F37E6E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senac.eShop.Application", "src\Senac.eShop.Application\Senac.eShop.Application.csproj", "{FDD7FA7E-6D4A-44A8-849A-0EC49F37E6E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senac.eShop.Domain.Shared", "src\Senac.eShop.Domain.Shared\Senac.eShop.Domain.Shared.csproj", "{5B2DE89B-0D04-4848-8618-DCAA76F254EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senac.eShop.Domain.Shared", "src\Senac.eShop.Domain.Shared\Senac.eShop.Domain.Shared.csproj", "{5B2DE89B-0D04-4848-8618-DCAA76F254EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senac.eShop.API", "src\Senac.eShop.API\Senac.eShop.API.csproj", "{1F659BDE-AFCD-43D4-930E-13616BA5100E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senac.eShop.API", "src\Senac.eShop.API\Senac.eShop.API.csproj", "{1F659BDE-AFCD-43D4-930E-13616BA5100E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senac.eShop.Core", "src\Senac.eShop.Core\Senac.eShop.Core.csproj", "{AA93288C-6368-4375-A154-B45F99DC3ED5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senac.eShop.Core", "src\Senac.eShop.Core\Senac.eShop.Core.csproj", "{AA93288C-6368-4375-A154-B45F99DC3ED5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
