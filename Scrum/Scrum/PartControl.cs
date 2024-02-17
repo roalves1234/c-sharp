@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Scrum
 {
-    public class ControlPart
+    public class PartControl
     {
         private IPartRegra regra;
         private Tarefa tarefaAtual;
@@ -22,18 +22,26 @@ namespace Scrum
             listaTarefa = Dao.ObterLista(regra.GetCondicaoWhere());
         }
 
-        public IList<Tarefa> ListaTarefa { get { return listaTarefa; } }
-        public Tarefa TarefaAtual
-        {
-            get { return tarefaAtual; }
-            set { tarefaAtual = value; }
+        public IList<Tarefa> ListaTarefa 
+        { 
+            get { return listaTarefa; } 
         }
-        public ControlPart(IPartRegra regra)
+        public Tarefa TarefaAtual
+        { 
+            get { return (tarefaAtual); } 
+            private set { tarefaAtual = value; } 
+        } 
+        public PartControl(IPartRegra regra)
         {
             this.regra = regra;
+            this.Dao = new DaoTarefa();
             this.ListarRegistro();
         }
-
+        public PartControl SetTarefaAtual(Tarefa value)
+        {
+            tarefaAtual = value;
+            return (this);
+        }
         public void AdicionarTarefa(Tarefa tarefa)
         {
             regra.Alterar(tarefa);

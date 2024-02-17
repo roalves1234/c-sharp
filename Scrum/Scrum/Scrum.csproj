@@ -68,7 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comum.cs" />
-    <Compile Include="ControlPart.cs" />
+    <Compile Include="PartControl.cs" />
     <Compile Include="DaoTarefa.cs" />
     <Compile Include="FormKanban.cs">
       <SubType>Form</SubType>
@@ -103,7 +103,7 @@
     <Compile Include="Models\Retrospectiva.cs" />
     <Compile Include="Models\Sprint.cs" />
     <Compile Include="Models\Tarefa.cs" />
-    <Compile Include="PresenterPart.cs" />
+    <Compile Include="PartPresenter.cs" />
     <Compile Include="PartView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -112,6 +112,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScrumIntf.cs" />
     <Compile Include="ScrumMap.cs" />
     <Compile Include="ScrumValidacao.cs" />
     <EmbeddedResource Include="FormKanban.resx">

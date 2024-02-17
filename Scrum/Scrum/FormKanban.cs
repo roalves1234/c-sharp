@@ -14,9 +14,9 @@ namespace Scrum
 {
     public partial class FormKanban : Form
     {
-        PartView parteAFazer;
-        PartView parteFazendo;
-        PartView parteFeito;
+        PartPresenter parteAFazer;
+        PartPresenter parteFazendo;
+        PartPresenter parteFeito;
         Sprint sprint;
 
         public FormKanban()
@@ -26,33 +26,28 @@ namespace Scrum
             sprint = new SprintMap().GetSprintAtual();
             lblSprint.Text = sprint.Descricao;
 
-            parteAFazer = new PartView(new PartRegraKanban(sprint, "A Fazer"), "A Fazer");
-            parteAFazer.Parent = pnlAFazer;
-
-            parteFazendo = new PartView(new PartRegraKanban(sprint, "Fazendo"), "Fazendo");
-            parteFazendo.Parent = pnlFazendo;
-
-            parteFeito = new PartView(new PartRegraKanban(sprint, "Feito"), "Feito");
-            parteFeito.Parent = pnlFeito;
+            parteAFazer = new PartPresenter(new PartView(), new PartControl(new PartRegraKanban(sprint, "A Fazer")), "A Fazer").SetParent(pnlAFazer);
+            parteFazendo = new PartPresenter(new PartView(), new PartControl(new PartRegraKanban(sprint, "Fazendo")), "Fazendo").SetParent(pnlFazendo);
+            parteFeito = new PartPresenter(new PartView(), new PartControl(new PartRegraKanban(sprint, "Feito")), "Feito").SetParent(pnlFeito);
         }
 
         private void btnToFazendo_Click(object sender, EventArgs e) 
         {
-            PartView.Transferir(parteAFazer, parteFazendo);
+            parteAFazer.TransferirPara(parteFazendo);
         }
 
         private void btnToAFazer_Click(object sender, EventArgs e)
         {
-            PartView.Transferir(parteFazendo, parteAFazer);
+            parteFazendo.TransferirPara(parteAFazer);
         }
 
         private void btnToFeito_Click(object sender, EventArgs e)
         {
-            PartView.Transferir(parteFazendo, parteFeito);
+            parteFazendo.TransferirPara(parteFeito);
         }
         private void btnToFazendoB_Click(object sender, EventArgs e)
         {
-            PartView.Transferir(parteFeito, parteFazendo);
+            parteFeito.TransferirPara(parteFazendo);
         }
 
         private void pnlAFazer_Enter(object sender, EventArgs e)
@@ -71,23 +66,19 @@ namespace Scrum
             btnToFazendoB.BringToFront();
         }
     }
-
     public class PartRegraKanban : IPartRegra
     {
         private Sprint sprint;
         private String status;
-
         public PartRegraKanban(Sprint sprint, String status)
         {
             this.sprint = sprint;
             this.status = status;
         }
-
         public void Alterar(Tarefa tarefa)
         {
             tarefa.Status = this.status;
         }
-
         public Junction GetCondicaoWhere() //### precisa estar dentro da Dao.GetListaTarefa(sprint, status) | o Control vai fazer a chamada deste método
         {
             var condicao = Restrictions.Conjunction();

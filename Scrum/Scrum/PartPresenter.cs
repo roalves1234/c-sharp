@@ -11,18 +11,19 @@ using Scrum.Model;
 
 namespace Scrum
 {
-    public class PresenterPart
+
+    public class PartPresenter
     {
-        private ControlPart control;
+        private PartControl control;
         private PartView view;
         private BindingList<Tarefa> bindGrid;
         private Color CorSelecionado = Color.Yellow;
         private Color CorNormal = Color.White;
 
-        public PresenterPart(PartView view, ControlPart control, string titulo)
+        public PartPresenter(PartView view, PartControl control, string titulo)
         {
             this.control = control;
-            this.view = view;
+            this.view = view.SetPresenter(this);
             DoInicializarVisual(titulo);
         }
         private void RefreshView()
@@ -40,8 +41,7 @@ namespace Scrum
             view.grid.DataSource = (bindGrid = new BindingList<Tarefa>(control.ListaTarefa));
             view.Dock = DockStyle.Fill;
             view.lblTitulo.Text = titulo;
-
-            DoDefinirCorSelecionado(false);
+            this.DoDefinirCorSelecionado(false);
             this.RefreshView();
         }
         private void GoUltimaLinhaGrid()
@@ -49,7 +49,28 @@ namespace Scrum
             view.grid.Focus();
             view.grid.CurrentCell = view.grid[0, view.grid.Rows.Count - 1];
         }
+        private void RemoverTarefaAtual()
+        {
+            control.RemoverTarefaAtual();
+            this.RefreshView();
+        }
+        public PartPresenter SetParent(Control Value)
+        {
+            view.Parent = Value;
+            return (this);
+        }
+        public PartPresenter SetTarefaAtual(Tarefa Value)
+        {
+            control.SetTarefaAtual(Value);
+            return (this);
+        }
+        public void AdicionarTarefa(Tarefa tarefa)
+        {
+            control.AdicionarTarefa(tarefa);
 
+            this.RefreshView();
+            GoUltimaLinhaGrid();
+        }
         private void DefinirCorSelecionado(Color cor)
         {
             DataGridViewCellStyle estilo = new DataGridViewCellStyle();
@@ -60,23 +81,6 @@ namespace Scrum
             foreach (DataGridViewRow row in view.grid.Rows)
                 row.DefaultCellStyle = estilo;
         }
-        private void RemoverTarefaAtual()
-        {
-            control.RemoverTarefaAtual();
-            this.RefreshView();
-        }
-        public PresenterPart SetParent(Control Value)
-        {
-            view.Parent = Value;
-            return (this);
-        }
-        public void AdicionarTarefa(Tarefa tarefa)
-        {
-            control.AdicionarTarefa(tarefa);
-
-            this.RefreshView();
-            GoUltimaLinhaGrid();
-        }
         public void DoDefinirCorSelecionado(Boolean ehSelecionado)
         {
             if (ehSelecionado)
@@ -84,18 +88,11 @@ namespace Scrum
             else
                 DefinirCorSelecionado(CorNormal);
         }
-        public void DoGridSelectionChange()
-        {
-            if ((view.grid.SelectedRows.Count > 0) && (view.grid.SelectedRows[0].DataBoundItem != null) && (view.grid.SelectedRows[0].DataBoundItem.GetType() == typeof(Tarefa)))
-                control.TarefaAtual = (view.grid.SelectedRows[0].DataBoundItem as Tarefa);
-            else
-                control.TarefaAtual = null;
-        }
-        public void TransferirPara(PresenterPart destino)
+        public void TransferirPara(PartPresenter destino)
         {
             if (control.TarefaAtual != null)
             {
-                Tarefa tarefa = control.TarefaAtual;
+                var tarefa = control.TarefaAtual;
                 this.RemoverTarefaAtual();
                 destino.AdicionarTarefa(tarefa);
             }

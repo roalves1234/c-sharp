@@ -14,8 +14,8 @@ namespace Scrum
 {
     public partial class FormPlanejamentoSprint : Form //## este form trabalha com...
     {
-        PartView parteProductBacklog;
-        PartView parteSprintBacklog;
+        PartPresenter parteProductBacklog;
+        PartPresenter parteSprintBacklog;
         Sprint sprint;
 
         public FormPlanejamentoSprint()
@@ -25,26 +25,18 @@ namespace Scrum
             sprint = new SprintMap().GetSprintAtual(); //## criação de model com a chamada a Dao
             lblSprint.Text = sprint.Descricao; //## atribuição do componente visual a partir da model
 
-            /*
-                parteProductBacklog = new PresenterPart(new ControlPart(new PartRegraPlanejamentoSprint(null)), new PartView(), "Product Backlog");
-                parteProductBacklog.SetParent(pnlProductBacklog);
-            */
-
-            parteProductBacklog = new PartView(new PartRegraPlanejamentoSprint(null), "Product Backlog");
-            parteProductBacklog.Parent = pnlProductBacklog;
-
-            parteSprintBacklog = new PartView(new PartRegraPlanejamentoSprint(sprint), "Sprint Backlog");
-            parteSprintBacklog.Parent = pnlSprintBacklog;
+            parteProductBacklog = new PartPresenter(new PartView(), new PartControl(new PartRegraPlanejamentoSprint(null)), "Product Backlog").SetParent(pnlProductBacklog);
+            parteSprintBacklog = new PartPresenter(new PartView(), new PartControl(new PartRegraPlanejamentoSprint(sprint)), "Sprint Backlog").SetParent(pnlSprintBacklog);
         }
 
         private void btnToSprintBacklog_Click(object sender, EventArgs e)
         {
-            PartView.Transferir(parteProductBacklog, parteSprintBacklog); //## regra vinculada a view
+            parteProductBacklog.TransferirPara(parteSprintBacklog); //## regra vinculada a view
         }
 
         private void btnToBacklog_Click(object sender, EventArgs e)
         {
-            PartView.Transferir(parteSprintBacklog, parteProductBacklog); 
+            parteSprintBacklog.TransferirPara(parteProductBacklog); 
         }
 
         private void pnlProductBacklog_Enter(object sender, EventArgs e)

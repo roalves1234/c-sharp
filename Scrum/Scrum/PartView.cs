@@ -20,17 +20,9 @@ using System.Runtime.ConstrainedExecution;
 
 namespace Scrum
 {
-    public interface IPartRegra
-    {
-        void Alterar(Tarefa tarefa);
-        Junction GetCondicaoWhere();
-    }
-
     public partial class PartView : UserControl
     {
         private PartPresenter presenter;
-        private Color CorSelecionado = Color.Yellow;
-        private Color CorNormal = Color.White;
         public PartView()
         {
             InitializeComponent();
@@ -41,7 +33,6 @@ namespace Scrum
             presenter = Value;
             return (this);
         }
-
         private void grid_SelectionChanged(object sender, EventArgs e)
         {          
             if ((grid.SelectedRows.Count > 0) && (grid.SelectedRows[0].DataBoundItem != null) && (grid.SelectedRows[0].DataBoundItem.GetType() == typeof(Tarefa)))
@@ -50,32 +41,14 @@ namespace Scrum
                 presenter.SetTarefaAtual(null);
         }
 
-        private void DefinirCorSelecionado(Color cor)
-        {
-            DataGridViewCellStyle estilo = new DataGridViewCellStyle();
-            estilo.SelectionBackColor = cor;
-            estilo.SelectionForeColor = Color.Black;
-            grid.RowTemplate.DefaultCellStyle = estilo;
-
-            foreach (DataGridViewRow row in grid.Rows)
-                row.DefaultCellStyle = estilo;
-        }
-        private void DoDefinirCorSelecionado(Boolean ehSelecionado)
-        {
-            if (ehSelecionado)
-                DefinirCorSelecionado(CorSelecionado);
-            else
-                DefinirCorSelecionado(CorNormal);
-        }
-
         private void grid_Enter(object sender, EventArgs e)
         {
-            DoDefinirCorSelecionado(true);
+            presenter.DoDefinirCorSelecionado(true);
         }
 
         private void grid_Leave(object sender, EventArgs e)
         {
-            DoDefinirCorSelecionado(false);
+            presenter.DoDefinirCorSelecionado(false);
         }
     }
 }

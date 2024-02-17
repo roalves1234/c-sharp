@@ -14,7 +14,7 @@ namespace Scrum
         private ISession session;
         public DaoTarefa()
         {
-            this.session = ConexaoBanco.getInstance().NewSession();
+            session = ConexaoBanco.getInstance().NewSession();
         }
         public IList<Tarefa> ObterLista(Junction condicao)
         {
@@ -41,6 +41,7 @@ namespace Scrum
         public void Evitar(Tarefa tarefa)
         {
             session.Evict(tarefa);
+            session.Evict(tarefa.Sprint);
         }
     }
 }
