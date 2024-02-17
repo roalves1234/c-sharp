@@ -20,6 +20,10 @@ namespace Scrum
         private Color CorSelecionado = Color.Yellow;
         private Color CorNormal = Color.White;
 
+        ç // O PRESENTER FAZ CHAMADAS A VIEW E ESTA REALIZA A AÇÃO.
+          // COLOCAR TODA A MANIPULAÇÃO DA VIEW NA PRÓPRIA VIEW - EM FORMA DE PROCEDIMENTOS
+          // FAZER CHAMADAS A ESSES PROCEDIMENTOS OU CHAMADAS DIRETAS DA VIEW COM NO MÁXIMO 1 LINHA
+
         public PartPresenter(PartView view, PartControl control, string titulo)
         {
             this.control = control;
