@@ -19,19 +19,17 @@ namespace Scrum
         private Color CorSelecionado = Color.Yellow;
         private Color CorNormal = Color.White;
 
+        public PresenterPart(PartView view, ControlPart control, string titulo)
+        {
+            this.control = control;
+            this.view = view;
+            DoInicializarVisual(titulo);
+        }
         private void RefreshView()
         {
             view.lblPontos.Text = control.ListaTarefa.Sum(t => t.Pontuacao).ToString();
             bindGrid.ResetBindings();
         }
-
-        public PresenterPart(PartView view, string titulo, IPartRegra regra)
-        {
-            this.control = new ControlPart(regra);
-            this.view = view;
-            DoInicializarVisual(titulo);
-        }
-
         private void DoInicializarVisual(string titulo)
         {
             new ManipulacaoGrid(view.grid)
@@ -44,18 +42,6 @@ namespace Scrum
             view.lblTitulo.Text = titulo;
 
             DoDefinirCorSelecionado(false);
-            this.RefreshView();
-        }
-        public void AdicionarTarefa(Tarefa tarefa)
-        {
-            control.AdicionarTarefa(tarefa);
-
-            this.RefreshView();
-            GoUltimaLinhaGrid();
-        }
-        private void RemoverTarefaAtual()
-        {
-            control.RemoverTarefaAtual();
             this.RefreshView();
         }
         private void GoUltimaLinhaGrid()
@@ -73,6 +59,22 @@ namespace Scrum
 
             foreach (DataGridViewRow row in view.grid.Rows)
                 row.DefaultCellStyle = estilo;
+        }
+        private void RemoverTarefaAtual()
+        {
+            control.RemoverTarefaAtual();
+            this.RefreshView();
+        }
+        public void SetParent(Control Value)
+        {
+            view.Parent = Value;
+        }
+        public void AdicionarTarefa(Tarefa tarefa)
+        {
+            control.AdicionarTarefa(tarefa);
+
+            this.RefreshView();
+            GoUltimaLinhaGrid();
         }
         public void DoDefinirCorSelecionado(Boolean ehSelecionado)
         {
