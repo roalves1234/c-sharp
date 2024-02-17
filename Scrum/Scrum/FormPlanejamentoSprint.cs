@@ -22,7 +22,7 @@ namespace Scrum
         {
             InitializeComponent();
 
-            sprint = new SprintMap().GetSprintAtual(); //## criação de model com a chamada a DAO
+            sprint = new SprintMap().GetSprintAtual(); //## criação de model com a chamada a Dao
             lblSprint.Text = sprint.Descricao; //## atribuição do componente visual a partir da model
 
             parteProductBacklog = new PartView(new PartRegraPlanejamentoSprint(null), "Product Backlog");

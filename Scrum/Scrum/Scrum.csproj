@@ -68,6 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comum.cs" />
+    <Compile Include="ControlPart.cs" />
+    <Compile Include="DaoTarefa.cs" />
     <Compile Include="FormKanban.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +103,7 @@
     <Compile Include="Models\Retrospectiva.cs" />
     <Compile Include="Models\Sprint.cs" />
     <Compile Include="Models\Tarefa.cs" />
+    <Compile Include="PresenterPart.cs" />
     <Compile Include="PartView.cs">
       <SubType>UserControl</SubType>
     </Compile>

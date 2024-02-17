@@ -88,7 +88,7 @@ namespace Scrum
             tarefa.Status = this.status;
         }
 
-        public Junction GetCondicaoWhere() //### precisa estar dentro da DAO.GetListaTarefa(sprint, status) | o Control vai fazer a chamada deste método
+        public Junction GetCondicaoWhere() //### precisa estar dentro da Dao.GetListaTarefa(sprint, status) | o Control vai fazer a chamada deste método
         {
             var condicao = Restrictions.Conjunction();
             condicao.Add(Restrictions.Eq(Projections.Property<Tarefa>(t => t.Sprint.IdSprint), sprint.IdSprint));

@@ -32,8 +32,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblPontos = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -90,15 +90,6 @@
             this.panel2.Size = new System.Drawing.Size(262, 22);
             this.panel2.TabIndex = 7;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(202, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "pontos";
-            // 
             // lblPontos
             // 
             this.lblPontos.Location = new System.Drawing.Point(100, 3);
@@ -107,6 +98,15 @@
             this.lblPontos.TabIndex = 1;
             this.lblPontos.Text = "0";
             this.lblPontos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(202, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "pontos";
             // 
             // PartView
             // 
@@ -126,11 +126,11 @@
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView grid;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblPontos;
+        public System.Windows.Forms.DataGridView grid;
+        public System.Windows.Forms.Label lblTitulo;
+        public System.Windows.Forms.Label lblPontos;
     }
 }
