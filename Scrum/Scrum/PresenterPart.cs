@@ -65,9 +65,10 @@ namespace Scrum
             control.RemoverTarefaAtual();
             this.RefreshView();
         }
-        public void SetParent(Control Value)
+        public PresenterPart SetParent(Control Value)
         {
             view.Parent = Value;
+            return (this);
         }
         public void AdicionarTarefa(Tarefa tarefa)
         {
