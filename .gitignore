@@ -5,3 +5,5 @@
 *.pdb
 *.exe
 *.bin
+*.dll
+*.pdb
