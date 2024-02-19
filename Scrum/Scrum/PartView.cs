@@ -23,32 +23,82 @@ namespace Scrum
     public partial class PartView : UserControl
     {
         private PartPresenter presenter;
+        private Color CorSelecionado = Color.Yellow;
+        private Color CorNormal = Color.White;
         public PartView()
         {
             InitializeComponent();
         }
 
-        public PartView SetPresenter(PartPresenter Value)
+        public PartView SetPresenter(PartPresenter value)
         {
-            presenter = Value;
+            presenter = value;
             return (this);
+        }
+        public PartView SetTitulo(string value)
+        {
+            lblTitulo.Text = value;
+            return (this);
+        }
+        public PartView SetPontos(int value)
+        {
+            lblPontos.Text = value.ToString();
+            return (this);
+        }
+        public PartView SetBindGrid(object value)
+        {
+            grid.DataSource = value;
+            return (this);
+        }
+        public void DoInicializarVisual()
+        {
+            Dock = DockStyle.Fill;
+
+            new ManipulacaoGrid(grid)
+                .RedimensionarColunas()
+                .SetNomeColuna("Descricao")
+                .SetTamanho(200);
+
+            DoDefinirCorSelecionado(false);
+        }
+        public void GoUltimaLinhaGrid()
+        {
+            grid.Focus();
+            grid.CurrentCell = grid[0, grid.Rows.Count - 1];
+        }
+        public void DefinirCorSelecionado(Color cor)
+        {
+            DataGridViewCellStyle estilo = new DataGridViewCellStyle();
+            estilo.SelectionBackColor = cor;
+            estilo.SelectionForeColor = Color.Black;
+            grid.RowTemplate.DefaultCellStyle = estilo;
+
+            foreach (DataGridViewRow row in grid.Rows)
+                row.DefaultCellStyle = estilo;
+        }
+        public void DoDefinirCorSelecionado(Boolean ehSelecionado)
+        {
+            if (ehSelecionado)
+                DefinirCorSelecionado(CorSelecionado);
+            else
+                DefinirCorSelecionado(CorNormal);
         }
         private void grid_SelectionChanged(object sender, EventArgs e)
         {          
-            if ((grid.SelectedRows.Count > 0) && (grid.SelectedRows[0].DataBoundItem != null) && (grid.SelectedRows[0].DataBoundItem.GetType() == typeof(Tarefa)))
-                presenter.SetTarefaAtual((grid.SelectedRows[0].DataBoundItem as Tarefa));
+            if ((grid.SelectedRows.Count > 0) && (grid.SelectedRows[0].DataBoundItem != null))
+                presenter.SetObjetoAtualGrid(grid.SelectedRows[0].DataBoundItem);
             else
-                presenter.SetTarefaAtual(null);
+                presenter.SetObjetoAtualGrid(null);
         }
 
         private void grid_Enter(object sender, EventArgs e)
         {
-            presenter.DoDefinirCorSelecionado(true);
+            DoDefinirCorSelecionado(true);
         }
 
         private void grid_Leave(object sender, EventArgs e)
         {
-            presenter.DoDefinirCorSelecionado(false);
+            DoDefinirCorSelecionado(false);
         }
     }
 }

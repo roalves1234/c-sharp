@@ -17,6 +17,12 @@ namespace Scrum
         private Tarefa tarefaAtual;
         private IList<Tarefa> listaTarefa;
         private DaoTarefa Dao;
+        public PartControl(IPartRegra regra)
+        {
+            this.regra = regra; //## rever 
+            this.Dao = new DaoTarefa();
+            this.ListarRegistro();
+        }
         private void ListarRegistro()
         {
             listaTarefa = Dao.ObterLista(regra.GetCondicaoWhere());
@@ -31,12 +37,6 @@ namespace Scrum
             get { return (tarefaAtual); } 
             private set { tarefaAtual = value; } 
         } 
-        public PartControl(IPartRegra regra)
-        {
-            this.regra = regra;
-            this.Dao = new DaoTarefa();
-            this.ListarRegistro();
-        }
         public PartControl SetTarefaAtual(Tarefa value)
         {
             tarefaAtual = value;

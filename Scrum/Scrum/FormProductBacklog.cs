@@ -69,7 +69,7 @@ namespace Scrum
             numPontuacao.DataBindings.Clear();
 
             txtDescricao.DataBindings.Add("Text", tarefaAtual, "Descricao", false, DataSourceUpdateMode.OnPropertyChanged);
-            numPontuacao.DataBindings.Add("Value", tarefaAtual, "Pontuacao", false, DataSourceUpdateMode.OnPropertyChanged);
+            numPontuacao.DataBindings.Add("value", tarefaAtual, "Pontuacao", false, DataSourceUpdateMode.OnPropertyChanged);
         }
 
         private void DoSalvar()
