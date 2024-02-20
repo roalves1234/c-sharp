@@ -27,14 +27,13 @@ namespace Scrum
         {
             listaTarefa = Dao.ObterLista(regra.GetCondicaoWhere());
         }
-
         public IList<Tarefa> ListaTarefa 
         { 
-            get { return listaTarefa; } 
+            get { return listaTarefa; }
         }
         public Tarefa TarefaAtual
         { 
-            get { return (tarefaAtual); } 
+            get { return (tarefaAtual); }
             private set { tarefaAtual = value; } 
         } 
         public PartControl SetTarefaAtual(Tarefa value)
@@ -49,7 +48,6 @@ namespace Scrum
 
             listaTarefa.Add(tarefa);
         }
-
         public void RemoverTarefaAtual()
         {
             Dao.Evitar(tarefaAtual);

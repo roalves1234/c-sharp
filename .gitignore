@@ -9,3 +9,7 @@
 *.pdb
 *.xml
 *.CopyComplete
+*.editorconfig
+*.editorconfig
+*.props
+*.json

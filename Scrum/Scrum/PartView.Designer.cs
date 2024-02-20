@@ -129,8 +129,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.DataGridView grid;
-        public System.Windows.Forms.Label lblTitulo;
-        public System.Windows.Forms.Label lblPontos;
+        private System.Windows.Forms.DataGridView grid;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label lblPontos;
     }
 }

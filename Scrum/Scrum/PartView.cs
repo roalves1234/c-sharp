@@ -29,7 +29,6 @@ namespace Scrum
         {
             InitializeComponent();
         }
-
         public PartView SetPresenter(PartPresenter value)
         {
             presenter = value;
@@ -66,7 +65,7 @@ namespace Scrum
             grid.Focus();
             grid.CurrentCell = grid[0, grid.Rows.Count - 1];
         }
-        public void DefinirCorSelecionado(Color cor)
+        private void DefinirCorSelecionado(Color cor)
         {
             DataGridViewCellStyle estilo = new DataGridViewCellStyle();
             estilo.SelectionBackColor = cor;
@@ -90,12 +89,10 @@ namespace Scrum
             else
                 presenter.SetObjetoAtualGrid(null);
         }
-
         private void grid_Enter(object sender, EventArgs e)
         {
             DoDefinirCorSelecionado(true);
         }
-
         private void grid_Leave(object sender, EventArgs e)
         {
             DoDefinirCorSelecionado(false);
