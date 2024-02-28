@@ -21,8 +21,6 @@ namespace Scrum
     public partial class ProductBacklogView : Form
     {
         private ProductBacklogPresenter presenter;
-        private bool ehModoPersistencia;
-        private bool ehModoVisualizacao;
 
         public ProductBacklogView()
         {
@@ -33,22 +31,10 @@ namespace Scrum
             presenter = value;
             return (this);
         }
-        public void SetModoPersistencia()
+        public void ExibirPersistencia(bool sim)
         {
-            btnSalvar.Show();
-
-            ehModoPersistencia = true;
-            ehModoVisualizacao = false;
+            btnSalvar.Visible = sim;
         }
-        public void SetModoVisualizacao()
-        {
-            btnSalvar.Hide();
-
-            ehModoPersistencia = false;                                                                  
-            ehModoVisualizacao = true;
-        }
-        public bool EhModoPersistencia { get { return (ehModoPersistencia); } }
-        public bool EhModoVisualizacao { get { return (ehModoVisualizacao); } }
         public void DoInicializarVisual()
         {
             Dock = DockStyle.Fill;
@@ -90,7 +76,7 @@ namespace Scrum
         }
         private void pnlRegistro_Enter(object sender, EventArgs e)
         {
-            SetModoPersistencia();
+            presenter.SetModoPersistencia();
         }
         private void inserirToolStripMenuItem_Click(object sender, EventArgs e)
         {

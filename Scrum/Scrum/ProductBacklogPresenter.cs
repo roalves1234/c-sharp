@@ -18,13 +18,29 @@ namespace Scrum
         private BindingList<Tarefa> bindGrid;
         private Binding bindDescricao;
         private Binding bindPontuacao;
+        private bool ehModoPersistencia;
+        private bool ehModoVisualizacao;
 
+        public void SetModoPersistencia()
+        {
+            view.ExibirPersistencia(true);
+
+            ehModoPersistencia = true;
+            ehModoVisualizacao = false;
+        }
+        public void SetModoVisualizacao()
+        {
+            view.ExibirPersistencia(false);
+
+            ehModoPersistencia = false;
+            ehModoVisualizacao = true;
+        }
         public ProductBacklogPresenter(ProductBacklogView view, ProductBacklogControl control)
         {
             this.control = control;
             this.view = view.SetPresenter(this);
             view.DoInicializarVisual();
-            view.SetModoVisualizacao();
+            this.SetModoVisualizacao();
             this.bindGrid = new BindingList<Tarefa>(control.ListaTarefa);
             view.SetBindGrid(bindGrid);
         }
@@ -49,10 +65,10 @@ namespace Scrum
         }
         public ProductBacklogPresenter SetObjetoAtualGrid(object value)
         {
-            if ((view.EhModoPersistencia) && (control.ListaTarefa.Contains(control.TarefaAtual)))
+            if ((ehModoPersistencia) && (control.ListaTarefa.Contains(control.TarefaAtual)))
                 this.SalvarTarefAtual();
             else
-                view.SetModoVisualizacao();
+                SetModoVisualizacao();
 
             if ((value != null) && (value.GetType() == typeof(Tarefa)))
                 control.SetTarefaAtual(value as Tarefa);
@@ -71,7 +87,7 @@ namespace Scrum
         public void SalvarTarefAtual()
         {
             control.SalvarTarefaAtual();
-            view.SetModoVisualizacao();
+            SetModoVisualizacao();
             DoGridBind();
         }
         public void EliminarTarefaAtual()
