@@ -21,5 +21,8 @@ namespace Scrum.Model
         public virtual int Pontuacao { get; set; }
         public virtual string Status { get; set; }
         public virtual Sprint Sprint { get; set; }
+        public virtual bool Existe { get { return (IdTarefa > 0); } }
+
+
     }
 }

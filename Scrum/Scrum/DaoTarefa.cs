@@ -29,7 +29,21 @@ namespace Scrum
             using (ITransaction transacao = session.BeginTransaction())
                 try
                 {
-                    session.Update(tarefa);
+                    session.SaveOrUpdate(tarefa);
+                    transacao.Commit();
+                }
+                catch
+                {
+                    transacao.Rollback();
+                    throw;
+                }
+        }
+        public void Eliminar(Tarefa tarefa)
+        {
+            using (ITransaction transacao = session.BeginTransaction())
+                try
+                {
+                    session.Delete(tarefa);
                     transacao.Commit();
                 }
                 catch

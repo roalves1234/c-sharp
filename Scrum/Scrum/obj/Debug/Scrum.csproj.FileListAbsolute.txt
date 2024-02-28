@@ -32,7 +32,6 @@ D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\obj\Debug\Scrum.FormKanban.resources
 D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\obj\Debug\Scrum.FormPlanejamentoSprint.resources
 D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\obj\Debug\Scrum.FormPrincipal.resources
 D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\obj\Debug\Scrum.FormRetrospectiva.resources
-D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\obj\Debug\Scrum.FormProductBacklog.resources
 D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\obj\Debug\Scrum.PartView.resources
 D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\obj\Debug\Scrum.Properties.Resources.resources
 D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\obj\Debug\Scrum.csproj.GenerateResource.cache
@@ -86,3 +85,4 @@ C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\Scrum\obj\Debu
 C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\Scrum\obj\Debug\Scrum.csproj.CopyComplete
 C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\Scrum\obj\Debug\Scrum.exe
 C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\Scrum\obj\Debug\Scrum.pdb
+D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\obj\Debug\Scrum.ProductBacklogView.resources

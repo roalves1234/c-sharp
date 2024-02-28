@@ -12,7 +12,7 @@ namespace Scrum
         }
         private void productBacklogToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new FormProductBacklog().ShowDialog();
+            new ProductBacklogPresenter(new ProductBacklogView(), new ProductBacklogControl()).Show();
         }
 
         private void planejamentoDaSprintToolStripMenuItem_Click(object sender, EventArgs e)
