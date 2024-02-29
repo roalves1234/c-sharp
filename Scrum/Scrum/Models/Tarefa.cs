@@ -14,6 +14,10 @@ namespace Scrum.Model
             Hora = DateTime.Now.TimeOfDay;
             Status = "A Fazer";
         }
+        public Tarefa(string descricao) : this()
+        {
+            Descricao = descricao;
+        }
         public virtual int IdTarefa { get; set; }
         public virtual string Descricao { get; set; }
         public virtual DateTime Data { get; set; }

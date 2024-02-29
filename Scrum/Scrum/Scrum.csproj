@@ -68,6 +68,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comum.cs" />
+    <Compile Include="DaoRetrospectiva.cs" />
+    <Compile Include="RetrospectivaControl.cs" />
+    <Compile Include="RetrospectivaPresenter.cs" />
+    <Compile Include="RetrospectivaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RetrospectivaView.Designer.cs">
+      <DependentUpon>RetrospectivaView.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProductBacklogView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RetrospectivaView.resx">
+      <DependentUpon>RetrospectivaView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductBacklogView.resx">
       <DependentUpon>ProductBacklogView.cs</DependentUpon>

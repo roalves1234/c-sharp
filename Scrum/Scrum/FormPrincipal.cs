@@ -27,7 +27,7 @@ namespace Scrum
 
         private void retrospectivaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new FormRetrospectiva().ShowDialog();
+            new RetrospectivaPresenter(new RetrospectivaView(), new RetrospectivaControl()).Show();
         }
     }
 }

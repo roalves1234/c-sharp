@@ -18,5 +18,6 @@ namespace Scrum.Model
         public virtual DateTime Data { get; set; }
         public virtual TimeSpan Hora { get; set; }
         public virtual Sprint Sprint { get; set; }
+        public virtual bool Existe { get { return (IdRetrospectiva > 0); } }
     }
 }
