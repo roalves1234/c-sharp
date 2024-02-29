@@ -35,6 +35,7 @@
             this.kanbanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.retrospectivaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.lblSprint = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,11 +85,25 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // lblSprint
+            // 
+            this.lblSprint.BackColor = System.Drawing.Color.Silver;
+            this.lblSprint.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblSprint.Font = new System.Drawing.Font("Calibri", 20F);
+            this.lblSprint.Location = new System.Drawing.Point(0, 24);
+            this.lblSprint.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSprint.Name = "lblSprint";
+            this.lblSprint.Size = new System.Drawing.Size(800, 66);
+            this.lblSprint.TabIndex = 2;
+            this.lblSprint.Text = "lblSprint";
+            this.lblSprint.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblSprint);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormPrincipal";
@@ -109,6 +124,7 @@
         private System.Windows.Forms.ToolStripMenuItem kanbanToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem retrospectivaToolStripMenuItem;
+        private System.Windows.Forms.Label lblSprint;
     }
 }
 

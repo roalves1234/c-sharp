@@ -16,7 +16,6 @@ namespace Scrum
     {
         private Retrospectiva retrospectivaAtual;
         private IList<Retrospectiva> listaRetrospectiva;
-        private Sprint sprintAtual;
         private DaoRetrospectiva Dao;
         public RetrospectivaControl()
         {
@@ -25,8 +24,7 @@ namespace Scrum
         }
         private void ListarRegistro()
         {
-            sprintAtual = new SprintMap().GetSprintAtual();
-            listaRetrospectiva = Dao.ObterLista(Restrictions.Disjunction().Add(Restrictions.Eq(Projections.Property<Retrospectiva>(t => t.Sprint.IdSprint), sprintAtual.IdSprint)));
+            listaRetrospectiva = Dao.ObterLista(Restrictions.Disjunction().Add(Restrictions.Eq(Projections.Property<Retrospectiva>(t => t.Sprint.IdSprint), Ambiente.GetInstance().SprintAtual.IdSprint)));
         }
         public IList<Retrospectiva> ListaRetrospectiva
         {
@@ -35,10 +33,6 @@ namespace Scrum
         public Retrospectiva RetrospectivaAtual
         {
             get { return (retrospectivaAtual); }
-        }
-        public Sprint SprintAtual
-        {
-            get { return (sprintAtual); }
         }
         public void SalvarRetrospectivaAtual()
         {
@@ -68,7 +62,7 @@ namespace Scrum
         public void DoNovaRetrospectiva()
         {
             var retrospectiva = new Retrospectiva();
-            retrospectiva.Sprint = sprintAtual;
+            retrospectiva.Sprint = Ambiente.GetInstance().SprintAtual;
             SetRetrospectivaAtual(retrospectiva);
         }
     }

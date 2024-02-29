@@ -16,34 +16,26 @@ namespace Scrum
     {
         PartPresenter parteProductBacklog;
         PartPresenter parteSprintBacklog;
-        Sprint sprint;
 
         public FormPlanejamentoSprint()
         {
             InitializeComponent();
 
-            sprint = new SprintMap().GetSprintAtual(); //## criação de model com a chamada a Dao
-            lblSprint.Text = sprint.Descricao; //## atribuição do componente visual a partir da model
-
             parteProductBacklog = new PartPresenter(new PartView(), new PartControl(new PartRegraPlanejamentoSprint(null)), "Product Backlog").SetParent(pnlProductBacklog);
-            parteSprintBacklog = new PartPresenter(new PartView(), new PartControl(new PartRegraPlanejamentoSprint(sprint)), "Sprint Backlog").SetParent(pnlSprintBacklog);
+            parteSprintBacklog = new PartPresenter(new PartView(), new PartControl(new PartRegraPlanejamentoSprint(Ambiente.GetInstance().SprintAtual)), "Sprint Backlog").SetParent(pnlSprintBacklog);
         }
-
         private void btnToSprintBacklog_Click(object sender, EventArgs e)
         {
             parteProductBacklog.TransferirPara(parteSprintBacklog); //## regra vinculada a view
         }
-
         private void btnToBacklog_Click(object sender, EventArgs e)
         {
             parteSprintBacklog.TransferirPara(parteProductBacklog); 
         }
-
         private void pnlProductBacklog_Enter(object sender, EventArgs e)
         {
             btnToSprintBacklog.BringToFront();
         }
-
         private void pnlSprintBacklog_Enter(object sender, EventArgs e)
         {
             btnToBacklog.BringToFront();
@@ -57,12 +49,10 @@ namespace Scrum
         {
             this.sprint = sprint;
         }
-
         public void Alterar(Tarefa tarefa)
         {
             tarefa.Sprint = sprint;
         }
-
         public Junction GetCondicaoWhere() //### regra de filtro de dataset a partir da model que foi passada
         {
             Object idSprint;

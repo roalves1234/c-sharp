@@ -17,18 +17,14 @@ namespace Scrum
         PartPresenter parteAFazer;
         PartPresenter parteFazendo;
         PartPresenter parteFeito;
-        Sprint sprint;
 
         public FormKanban()
         {
             InitializeComponent();
 
-            sprint = new SprintMap().GetSprintAtual();
-            lblSprint.Text = sprint.Descricao;
-
-            parteAFazer = new PartPresenter(new PartView(), new PartControl(new PartRegraKanban(sprint, "A Fazer")), "A Fazer").SetParent(pnlAFazer);
-            parteFazendo = new PartPresenter(new PartView(), new PartControl(new PartRegraKanban(sprint, "Fazendo")), "Fazendo").SetParent(pnlFazendo);
-            parteFeito = new PartPresenter(new PartView(), new PartControl(new PartRegraKanban(sprint, "Feito")), "Feito").SetParent(pnlFeito);
+            parteAFazer = new PartPresenter(new PartView(), new PartControl(new PartRegraKanban(Ambiente.GetInstance().SprintAtual, "A Fazer")), "A Fazer").SetParent(pnlAFazer);
+            parteFazendo = new PartPresenter(new PartView(), new PartControl(new PartRegraKanban(Ambiente.GetInstance().SprintAtual, "Fazendo")), "Fazendo").SetParent(pnlFazendo);
+            parteFeito = new PartPresenter(new PartView(), new PartControl(new PartRegraKanban(Ambiente.GetInstance().SprintAtual, "Feito")), "Feito").SetParent(pnlFeito);
         }
 
         private void btnToFazendo_Click(object sender, EventArgs e) 

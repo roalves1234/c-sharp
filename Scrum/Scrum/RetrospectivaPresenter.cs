@@ -17,7 +17,6 @@ namespace Scrum
         private RetrospectivaView view;
         private BindingList<Retrospectiva> bindGrid;
         private bool ehModoPersistencia;
-        private bool ehModoVisualizacao;
         public RetrospectivaPresenter(RetrospectivaView view, RetrospectivaControl control)
         {
             this.control = control;
@@ -32,14 +31,12 @@ namespace Scrum
             view.ExibirPersistencia(true);
 
             ehModoPersistencia = true;
-            ehModoVisualizacao = false;
         }
         public void SetModoVisualizacao()
         {
             view.ExibirPersistencia(false);
 
             ehModoPersistencia = false;
-            ehModoVisualizacao = true;
         }
         public void Show()
         {
@@ -53,8 +50,6 @@ namespace Scrum
         {
             if (control.RetrospectivaAtual != null)
                 view.SetBindDescricao(new Binding("Text", control.RetrospectivaAtual, "Descricao", false, DataSourceUpdateMode.OnPropertyChanged));
-            if (control.SprintAtual != null)
-                view.SetBindSprint(new Binding("Text", control.SprintAtual, "Descricao", false, DataSourceUpdateMode.OnPropertyChanged));
         }
         public RetrospectivaPresenter SetObjetoAtualGrid(object value)
         {

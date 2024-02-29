@@ -9,12 +9,12 @@ namespace Scrum
         public FormPrincipal()
         {
             InitializeComponent();
+            new SprintAtualPresenter(lblSprint);
         }
         private void productBacklogToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new ProductBacklogPresenter(new ProductBacklogView(), new ProductBacklogControl()).Show();
         }
-
         private void planejamentoDaSprintToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new FormPlanejamentoSprint().ShowDialog();

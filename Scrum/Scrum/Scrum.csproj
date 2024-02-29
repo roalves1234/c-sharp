@@ -67,8 +67,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ambiente.cs" />
     <Compile Include="Comum.cs" />
     <Compile Include="DaoRetrospectiva.cs" />
+    <Compile Include="DaoSprint.cs" />
+    <Compile Include="Models\SprintAtualPresenter.cs" />
     <Compile Include="RetrospectivaControl.cs" />
     <Compile Include="RetrospectivaPresenter.cs" />
     <Compile Include="RetrospectivaView.cs">

@@ -29,7 +29,7 @@ namespace Scrum.Model
     }
     public class SprintMap : ClassMap<Sprint>
     {
-        public SprintMap() 
+        public SprintMap()
         {
             Table("Sprint");
 
@@ -45,34 +45,13 @@ namespace Scrum.Model
         {
             public RetrospectivaMap()
             {
-                Table("SprintRetrospectiva"); 
+                Table("SprintRetrospectiva");
 
                 Id(x => x.IdRetrospectiva).GeneratedBy.Identity();
                 Map(x => x.Data).Default("GETDATE()");
                 Map(x => x.Hora).CustomType("TimeAsTimeSpan").Default("GETDATE()");
                 Map(x => x.Descricao);
                 References(x => x.Sprint).Column("IdSprint");
-            }
-        }
-
-        public Sprint GetSprintAtual()
-        {
-            using (var session = ConexaoBanco.getInstance().NewSession())
-            {
-                IList<Sprint> lista;
-
-                var condicao = Restrictions.Disjunction();
-                string[] listaStatus = { "Planejamento", "Execucao" };
-                condicao.Add(Restrictions.In(Projections.Property<Tarefa>(t => t.Status), listaStatus));
-
-                lista = session
-                            .QueryOver<Sprint>()
-                            .Where(condicao)
-                            .List();
-                if (lista.Count == 0)
-                    throw new Exception("Não existe sprint em aberto");
-
-                return (lista.First());
             }
         }
     }

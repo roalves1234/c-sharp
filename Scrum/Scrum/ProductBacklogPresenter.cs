@@ -17,7 +17,6 @@ namespace Scrum
         private ProductBacklogView view;
         private BindingList<Tarefa> bindGrid;
         private bool ehModoPersistencia;
-        private bool ehModoVisualizacao;
         public ProductBacklogPresenter(ProductBacklogView view, ProductBacklogControl control)
         {
             this.control = control;
@@ -32,14 +31,12 @@ namespace Scrum
             view.ExibirPersistencia(true);
 
             ehModoPersistencia = true;
-            ehModoVisualizacao = false;
         }
         public void SetModoVisualizacao()
         {
             view.ExibirPersistencia(false);
 
             ehModoPersistencia = false;
-            ehModoVisualizacao = true;
         }
         public void Show()
         {

@@ -62,12 +62,6 @@ namespace Scrum
             txtDescricao.DataBindings.Add(value);
             return (this);
         }
-        public RetrospectivaView SetBindSprint(Binding value)
-        {
-            lblSprint.DataBindings.Clear();
-            lblSprint.DataBindings.Add(value);
-            return (this);
-        }
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             presenter.SalvarRetrospectivaAtual();
