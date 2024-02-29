@@ -35,6 +35,14 @@ namespace Scrum
         {
             btnSalvar.Visible = sim;
         }
+        private void grid_SelectionChanged(object sender, EventArgs e)
+        {
+            if (grid.SelectedRows.Count > 0)
+                if (grid.SelectedRows[0].DataBoundItem != null)
+                    presenter.SetObjetoAtualGrid(grid.SelectedRows[0].DataBoundItem);
+                else if (grid.SelectedRows[0].IsNewRow)
+                    presenter.DoNovaTarefa();
+        }
         public void DoInicializarVisual()
         {
             Dock = DockStyle.Fill;
@@ -43,15 +51,6 @@ namespace Scrum
                 .RedimensionarColunas()
                 .SetNomeColuna("Descricao")
                 .SetTamanho(200);
-        }
-
-        private void grid_SelectionChanged(object sender, EventArgs e)
-        {
-            if (grid.SelectedRows.Count > 0) 
-                if (grid.SelectedRows[0].DataBoundItem != null)
-                    presenter.SetObjetoAtualGrid(grid.SelectedRows[0].DataBoundItem);
-                else if (grid.SelectedRows[0].IsNewRow)
-                    presenter.DoNovaTarefa();
         }
         public ProductBacklogView SetBindGrid(object value)
         {

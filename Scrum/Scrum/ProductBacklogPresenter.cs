@@ -16,11 +16,17 @@ namespace Scrum
         private ProductBacklogControl control;
         private ProductBacklogView view;
         private BindingList<Tarefa> bindGrid;
-        private Binding bindDescricao;
-        private Binding bindPontuacao;
         private bool ehModoPersistencia;
         private bool ehModoVisualizacao;
-
+        public ProductBacklogPresenter(ProductBacklogView view, ProductBacklogControl control)
+        {
+            this.control = control;
+            this.view = view.SetPresenter(this);
+            view.DoInicializarVisual();
+            this.SetModoVisualizacao();
+            this.bindGrid = new BindingList<Tarefa>(control.ListaTarefa);
+            view.SetBindGrid(bindGrid);
+        }
         public void SetModoPersistencia()
         {
             view.ExibirPersistencia(true);
@@ -35,15 +41,6 @@ namespace Scrum
             ehModoPersistencia = false;
             ehModoVisualizacao = true;
         }
-        public ProductBacklogPresenter(ProductBacklogView view, ProductBacklogControl control)
-        {
-            this.control = control;
-            this.view = view.SetPresenter(this);
-            view.DoInicializarVisual();
-            this.SetModoVisualizacao();
-            this.bindGrid = new BindingList<Tarefa>(control.ListaTarefa);
-            view.SetBindGrid(bindGrid);
-        }
         public void Show()
         {
             view.ShowDialog();
@@ -56,11 +53,8 @@ namespace Scrum
         {
             if (control.TarefaAtual != null)
             {
-                bindDescricao = new Binding("Text", control.TarefaAtual, "Descricao", false, DataSourceUpdateMode.OnPropertyChanged);
-                view.SetBindDescricao(bindDescricao);
-
-                bindPontuacao = new Binding("value", control.TarefaAtual, "Pontuacao", false, DataSourceUpdateMode.OnPropertyChanged);
-                view.SetBindPontuacao(bindPontuacao);
+                view.SetBindDescricao(new Binding("Text", control.TarefaAtual, "Descricao", false, DataSourceUpdateMode.OnPropertyChanged));
+                view.SetBindPontuacao(new Binding("value", control.TarefaAtual, "Pontuacao", false, DataSourceUpdateMode.OnPropertyChanged));
             }
         }
         public ProductBacklogPresenter SetObjetoAtualGrid(object value)
