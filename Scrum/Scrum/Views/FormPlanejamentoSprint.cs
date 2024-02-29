@@ -12,7 +12,7 @@ using Scrum.Model;
 
 namespace Scrum
 {
-    public partial class FormPlanejamentoSprint : Form //## este form trabalha com...
+    public partial class FormPlanejamentoSprint : Form 
     {
         PartPresenter parteProductBacklog;
         PartPresenter parteSprintBacklog;
@@ -26,7 +26,7 @@ namespace Scrum
         }
         private void btnToSprintBacklog_Click(object sender, EventArgs e)
         {
-            parteProductBacklog.TransferirPara(parteSprintBacklog); //## regra vinculada a view
+            parteProductBacklog.TransferirPara(parteSprintBacklog); 
         }
         private void btnToBacklog_Click(object sender, EventArgs e)
         {
@@ -53,7 +53,7 @@ namespace Scrum
         {
             tarefa.Sprint = sprint;
         }
-        public Junction GetCondicaoWhere() //### regra de filtro de dataset a partir da model que foi passada
+        public Junction GetCondicaoWhere() 
         {
             Object idSprint;
             if (sprint != null)
@@ -61,10 +61,7 @@ namespace Scrum
             else
                 idSprint = null;
 
-            var condicao = Restrictions.Disjunction();
-            condicao.Add(Restrictions.Eq(Projections.Property<Tarefa>(t => t.Sprint.IdSprint), idSprint));
-
-            return (condicao);
+            return (Restrictions.Disjunction().Add(Restrictions.Eq(Projections.Property<Tarefa>(t => t.Sprint.IdSprint), idSprint)));
         }
     }
 }

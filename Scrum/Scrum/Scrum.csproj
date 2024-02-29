@@ -67,78 +67,78 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ambiente.cs" />
-    <Compile Include="Comum.cs" />
-    <Compile Include="DaoRetrospectiva.cs" />
-    <Compile Include="DaoSprint.cs" />
-    <Compile Include="Models\SprintAtualPresenter.cs" />
-    <Compile Include="RetrospectivaControl.cs" />
-    <Compile Include="RetrospectivaPresenter.cs" />
-    <Compile Include="RetrospectivaView.cs">
+    <Compile Include="Comum\Ambiente.cs" />
+    <Compile Include="Comum\Comum.cs" />
+    <Compile Include="Daos\DaoRetrospectiva.cs" />
+    <Compile Include="Daos\DaoSprint.cs" />
+    <Compile Include="Presenters\SprintAtualPresenter.cs" />
+    <Compile Include="Controls\RetrospectivaControl.cs" />
+    <Compile Include="Presenters\RetrospectivaPresenter.cs" />
+    <Compile Include="Views\RetrospectivaView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RetrospectivaView.Designer.cs">
+    <Compile Include="Views\RetrospectivaView.Designer.cs">
       <DependentUpon>RetrospectivaView.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductBacklogView.cs">
+    <Compile Include="Views\ProductBacklogView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProductBacklogView.Designer.cs">
+    <Compile Include="Views\ProductBacklogView.Designer.cs">
       <DependentUpon>ProductBacklogView.cs</DependentUpon>
     </Compile>
-    <Compile Include="PartControl.cs" />
-    <Compile Include="DaoTarefa.cs" />
-    <Compile Include="FormKanban.cs">
+    <Compile Include="Controls\PartControl.cs" />
+    <Compile Include="Daos\DaoTarefa.cs" />
+    <Compile Include="Views\FormKanban.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormKanban.Designer.cs">
+    <Compile Include="Views\FormKanban.Designer.cs">
       <DependentUpon>FormKanban.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPlanejamentoSprint.cs">
+    <Compile Include="Views\FormPlanejamentoSprint.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPlanejamentoSprint.Designer.cs">
+    <Compile Include="Views\FormPlanejamentoSprint.Designer.cs">
       <DependentUpon>FormPlanejamentoSprint.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPrincipal.cs">
+    <Compile Include="Views\FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPrincipal.Designer.cs">
+    <Compile Include="Views\FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Retrospectiva.cs" />
     <Compile Include="Models\Sprint.cs" />
     <Compile Include="Models\Tarefa.cs" />
-    <Compile Include="PartPresenter.cs" />
-    <Compile Include="PartView.cs">
+    <Compile Include="Presenters\PartPresenter.cs" />
+    <Compile Include="Views\PartView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PartView.Designer.cs">
+    <Compile Include="Views\PartView.Designer.cs">
       <DependentUpon>PartView.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductBacklogControl.cs" />
-    <Compile Include="ProductBacklogPresenter.cs" />
+    <Compile Include="Controls\ProductBacklogControl.cs" />
+    <Compile Include="Presenters\ProductBacklogPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScrumIntf.cs" />
-    <Compile Include="ScrumMap.cs" />
-    <Compile Include="ScrumValidacao.cs" />
-    <EmbeddedResource Include="FormKanban.resx">
+    <Compile Include="Comum\ScrumIntf.cs" />
+    <Compile Include="Models\ScrumMap.cs" />
+    <Compile Include="Validacoes\ScrumValidacao.cs" />
+    <EmbeddedResource Include="Views\FormKanban.resx">
       <DependentUpon>FormKanban.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPlanejamentoSprint.resx">
+    <EmbeddedResource Include="Views\FormPlanejamentoSprint.resx">
       <DependentUpon>FormPlanejamentoSprint.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPrincipal.resx">
+    <EmbeddedResource Include="Views\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RetrospectivaView.resx">
+    <EmbeddedResource Include="Views\RetrospectivaView.resx">
       <DependentUpon>RetrospectivaView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProductBacklogView.resx">
+    <EmbeddedResource Include="Views\ProductBacklogView.resx">
       <DependentUpon>ProductBacklogView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PartView.resx">
+    <EmbeddedResource Include="Views\PartView.resx">
       <DependentUpon>PartView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

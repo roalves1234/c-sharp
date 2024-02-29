@@ -19,7 +19,7 @@ namespace Scrum
         private DaoTarefa Dao;
         public PartControl(IPartRegra regra)
         {
-            this.regra = regra; //## rever 
+            this.regra = regra; 
             this.Dao = new DaoTarefa();
             this.ListarRegistro();
         }
@@ -34,7 +34,6 @@ namespace Scrum
         public Tarefa TarefaAtual
         { 
             get { return (tarefaAtual); }
-            private set { tarefaAtual = value; } 
         } 
         public PartControl SetTarefaAtual(Tarefa value)
         {
