@@ -20,15 +20,15 @@ namespace Scrum
                 return (sprintAtual);
             }
         }
+        public static void ClearInstance() 
+        {
+            instance = null;
+        }
         public static Ambiente GetInstance()
         {
             if (instance == null)
                 instance = new Ambiente();
             return (instance);
         }
-
-
-
-
     }
 }

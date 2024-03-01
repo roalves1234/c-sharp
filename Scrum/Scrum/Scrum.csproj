@@ -69,11 +69,19 @@
   <ItemGroup>
     <Compile Include="Comum\Ambiente.cs" />
     <Compile Include="Comum\Comum.cs" />
+    <Compile Include="Controls\SprintControl.cs" />
     <Compile Include="Daos\DaoRetrospectiva.cs" />
     <Compile Include="Daos\DaoSprint.cs" />
+    <Compile Include="Presenters\SprintPresenter.cs" />
     <Compile Include="Presenters\SprintAtualPresenter.cs" />
     <Compile Include="Controls\RetrospectivaControl.cs" />
     <Compile Include="Presenters\RetrospectivaPresenter.cs" />
+    <Compile Include="Views\SprintView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SprintView.Designer.cs">
+      <DependentUpon>SprintView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\RetrospectivaView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SprintView.resx">
+      <DependentUpon>SprintView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\RetrospectivaView.resx">
       <DependentUpon>RetrospectivaView.cs</DependentUpon>

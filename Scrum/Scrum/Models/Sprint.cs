@@ -19,5 +19,6 @@ namespace Scrum.Model
         public virtual TimeSpan Hora { get; set; }
         public virtual string Status { get; set; }
         public virtual IList<Tarefa> ListaTarefa { get; set; } = new List<Tarefa>();
+        public virtual bool Existe { get { return (IdSprint > 0); } }
     }
 }

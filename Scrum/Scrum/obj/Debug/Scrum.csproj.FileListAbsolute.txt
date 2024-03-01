@@ -86,3 +86,4 @@ C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\Scrum\obj\Debu
 C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\Scrum\obj\Debug\Scrum.pdb
 D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\obj\Debug\Scrum.ProductBacklogView.resources
 D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\obj\Debug\Scrum.RetrospectivaView.resources
+D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\obj\Debug\Scrum.SprintView.resources

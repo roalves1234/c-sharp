@@ -9,7 +9,7 @@ namespace Scrum
         public FormPrincipal()
         {
             InitializeComponent();
-            new SprintAtualPresenter(lblSprint);
+            SprintAtualPresenter.SetInstance(lblSprint);
         }
         private void productBacklogToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -19,15 +19,17 @@ namespace Scrum
         {
             new FormPlanejamentoSprint().ShowDialog();
         }
-
         private void kanbanToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new FormKanban().ShowDialog();
         }
-
         private void retrospectivaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new RetrospectivaPresenter(new RetrospectivaView(), new RetrospectivaControl()).Show();
+        }
+        private void sprintToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new SprintPresenter(new SprintView(), new SprintControl()).Show();
         }
     }
 }

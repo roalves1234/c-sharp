@@ -36,6 +36,7 @@
             this.retrospectivaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.lblSprint = new System.Windows.Forms.Label();
+            this.sprintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,6 +44,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.productBacklogToolStripMenuItem,
+            this.sprintToolStripMenuItem,
             this.planejamentoDaSprintToolStripMenuItem,
             this.kanbanToolStripMenuItem,
             this.retrospectivaToolStripMenuItem});
@@ -98,6 +100,13 @@
             this.lblSprint.Text = "lblSprint";
             this.lblSprint.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // sprintToolStripMenuItem
+            // 
+            this.sprintToolStripMenuItem.Name = "sprintToolStripMenuItem";
+            this.sprintToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.sprintToolStripMenuItem.Text = "Sprint";
+            this.sprintToolStripMenuItem.Click += new System.EventHandler(this.sprintToolStripMenuItem_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -125,6 +134,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem retrospectivaToolStripMenuItem;
         private System.Windows.Forms.Label lblSprint;
+        private System.Windows.Forms.ToolStripMenuItem sprintToolStripMenuItem;
     }
 }
 
