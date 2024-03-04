@@ -9,3 +9,15 @@ D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Application\obj\Debug\net7.0\Scrum.App
 D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Application\obj\Debug\net7.0\refint\Scrum.Application.dll
 D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Application\obj\Debug\net7.0\Scrum.Application.pdb
 D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Application\obj\Debug\net7.0\ref\Scrum.Application.dll
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Application\bin\Debug\net7.0\Scrum.Application.deps.json
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Application\bin\Debug\net7.0\Scrum.Application.dll
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Application\bin\Debug\net7.0\Scrum.Application.pdb
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Application\obj\Debug\net7.0\Scrum.Application.csproj.AssemblyReference.cache
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Application\obj\Debug\net7.0\Scrum.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Application\obj\Debug\net7.0\Scrum.Application.AssemblyInfoInputs.cache
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Application\obj\Debug\net7.0\Scrum.Application.AssemblyInfo.cs
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Application\obj\Debug\net7.0\Scrum.Application.csproj.CoreCompileInputs.cache
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Application\obj\Debug\net7.0\Scrum.Application.dll
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Application\obj\Debug\net7.0\refint\Scrum.Application.dll
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Application\obj\Debug\net7.0\Scrum.Application.pdb
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Application\obj\Debug\net7.0\ref\Scrum.Application.dll

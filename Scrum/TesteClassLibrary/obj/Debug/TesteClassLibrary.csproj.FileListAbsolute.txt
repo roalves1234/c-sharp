@@ -1,0 +1,6 @@
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\TesteClassLibrary\bin\Debug\TesteClassLibrary.dll
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\TesteClassLibrary\bin\Debug\TesteClassLibrary.pdb
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\TesteClassLibrary\obj\Debug\TesteClassLibrary.csproj.AssemblyReference.cache
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\TesteClassLibrary\obj\Debug\TesteClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\TesteClassLibrary\obj\Debug\TesteClassLibrary.dll
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\TesteClassLibrary\obj\Debug\TesteClassLibrary.pdb

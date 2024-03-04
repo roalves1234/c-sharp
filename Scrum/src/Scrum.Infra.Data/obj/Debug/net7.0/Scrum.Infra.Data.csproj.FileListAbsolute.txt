@@ -9,3 +9,15 @@ D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.Data\obj\Debug\net7.0\Scrum.Infr
 D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.Data\obj\Debug\net7.0\refint\Scrum.Infra.Data.dll
 D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.Data\obj\Debug\net7.0\Scrum.Infra.Data.pdb
 D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.Data\obj\Debug\net7.0\ref\Scrum.Infra.Data.dll
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.Data\bin\Debug\net7.0\Scrum.Infra.Data.deps.json
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.Data\bin\Debug\net7.0\Scrum.Infra.Data.dll
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.Data\bin\Debug\net7.0\Scrum.Infra.Data.pdb
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.Data\obj\Debug\net7.0\Scrum.Infra.Data.csproj.AssemblyReference.cache
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.Data\obj\Debug\net7.0\Scrum.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.Data\obj\Debug\net7.0\Scrum.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.Data\obj\Debug\net7.0\Scrum.Infra.Data.AssemblyInfo.cs
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.Data\obj\Debug\net7.0\Scrum.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.Data\obj\Debug\net7.0\Scrum.Infra.Data.dll
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.Data\obj\Debug\net7.0\refint\Scrum.Infra.Data.dll
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.Data\obj\Debug\net7.0\Scrum.Infra.Data.pdb
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.Data\obj\Debug\net7.0\ref\Scrum.Infra.Data.dll

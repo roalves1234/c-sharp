@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scrum", "Scrum\Scrum.csproj", "{B0AAF8B6-AF3A-4389-99B1-EA5F26FE0708}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scrum.Core", "src\Scrum.Core\Scrum.Core.csproj", "{D1BFAF5C-6EE3-415A-8B4E-A4556A61D391}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scrum.Core", "src\Scrum.Core\Scrum.Core.csproj", "{D1BFAF5C-6EE3-415A-8B4E-A4556A61D391}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E2283C48-BE61-4C68-AE8A-4A55059899FF}"
 EndProject
@@ -23,17 +23,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dominio", "Dominio", "{A94C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apresentacao", "Apresentacao", "{3D216EA9-40E4-40C7-82B8-EC43C0993A9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scrum.Application", "src\Scrum.Application\Scrum.Application.csproj", "{046BEF74-1251-44C1-A04E-3ADBFBDD7199}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scrum.Application", "src\Scrum.Application\Scrum.Application.csproj", "{046BEF74-1251-44C1-A04E-3ADBFBDD7199}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scrum.Domain", "src\Scrum.Domain\Scrum.Domain.csproj", "{1038321F-D908-4963-A849-743318C89122}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scrum.Domain", "src\Scrum.Domain\Scrum.Domain.csproj", "{1038321F-D908-4963-A849-743318C89122}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scrum.Infra.CrossCutting.IoC", "src\Scrum.Infra.CrossCutting.IoC\Scrum.Infra.CrossCutting.IoC.csproj", "{F7E0C987-B395-42AA-A9CF-39B7C2AC2D0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scrum.Infra.CrossCutting.IoC", "src\Scrum.Infra.CrossCutting.IoC\Scrum.Infra.CrossCutting.IoC.csproj", "{F7E0C987-B395-42AA-A9CF-39B7C2AC2D0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scrum.Infra.Data", "src\Scrum.Infra.Data\Scrum.Infra.Data.csproj", "{9D07EEB6-F423-4D90-89A6-D8973C670EE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scrum.Infra.Data", "src\Scrum.Infra.Data\Scrum.Infra.Data.csproj", "{9D07EEB6-F423-4D90-89A6-D8973C670EE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scrum.API", "src\Scrum.API\Scrum.API.csproj", "{32B0CFEE-9CE8-42D9-AF7D-A1DB106E4BCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scrum.API", "src\Scrum.API\Scrum.API.csproj", "{32B0CFEE-9CE8-42D9-AF7D-A1DB106E4BCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scrum.Domain.Shared", "src\Scrum.Domain.Shared\Scrum.Domain.Shared.csproj", "{8CE79906-3E69-4EBA-A9DC-CBD191D32F68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scrum.Domain.Shared", "src\Scrum.Domain.Shared\Scrum.Domain.Shared.csproj", "{8CE79906-3E69-4EBA-A9DC-CBD191D32F68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteClassLibrary", "TesteClassLibrary\TesteClassLibrary.csproj", "{972C02EF-E743-451D-AAD3-C12F8E43DC7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +75,10 @@ Global
 		{8CE79906-3E69-4EBA-A9DC-CBD191D32F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CE79906-3E69-4EBA-A9DC-CBD191D32F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CE79906-3E69-4EBA-A9DC-CBD191D32F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{972C02EF-E743-451D-AAD3-C12F8E43DC7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{972C02EF-E743-451D-AAD3-C12F8E43DC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{972C02EF-E743-451D-AAD3-C12F8E43DC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{972C02EF-E743-451D-AAD3-C12F8E43DC7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +98,7 @@ Global
 		{9D07EEB6-F423-4D90-89A6-D8973C670EE1} = {9B2FC648-7475-4A64-85CB-A22DF2F02E7A}
 		{32B0CFEE-9CE8-42D9-AF7D-A1DB106E4BCA} = {6B2ACB17-FC88-4E07-B171-5B3957A579A8}
 		{8CE79906-3E69-4EBA-A9DC-CBD191D32F68} = {A94C252C-5FAB-46D1-8B8A-BF8EE3BCE9FA}
+		{972C02EF-E743-451D-AAD3-C12F8E43DC7D} = {809483F7-5BCD-47FD-9488-AE4F6FB92FE3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3CD3AE30-BE26-4A4B-9FD5-D73E799AAACD}

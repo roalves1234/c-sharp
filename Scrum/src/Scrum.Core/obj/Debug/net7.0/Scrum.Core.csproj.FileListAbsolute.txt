@@ -9,3 +9,15 @@ D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Core\obj\Debug\net7.0\Scrum.Core.dll
 D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Core\obj\Debug\net7.0\refint\Scrum.Core.dll
 D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Core\obj\Debug\net7.0\Scrum.Core.pdb
 D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Core\obj\Debug\net7.0\ref\Scrum.Core.dll
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Core\bin\Debug\net7.0\Scrum.Core.deps.json
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Core\bin\Debug\net7.0\Scrum.Core.dll
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Core\bin\Debug\net7.0\Scrum.Core.pdb
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Core\obj\Debug\net7.0\Scrum.Core.csproj.AssemblyReference.cache
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Core\obj\Debug\net7.0\Scrum.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Core\obj\Debug\net7.0\Scrum.Core.AssemblyInfoInputs.cache
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Core\obj\Debug\net7.0\Scrum.Core.AssemblyInfo.cs
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Core\obj\Debug\net7.0\Scrum.Core.csproj.CoreCompileInputs.cache
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Core\obj\Debug\net7.0\Scrum.Core.dll
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Core\obj\Debug\net7.0\refint\Scrum.Core.dll
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Core\obj\Debug\net7.0\Scrum.Core.pdb
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Core\obj\Debug\net7.0\ref\Scrum.Core.dll

@@ -9,3 +9,15 @@ D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.
 D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\refint\Scrum.Infra.CrossCutting.IoC.dll
 D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.pdb
 D:\Rodrigo\GitHub\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\ref\Scrum.Infra.CrossCutting.IoC.dll
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\bin\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.deps.json
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\bin\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.dll
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\bin\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.pdb
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.csproj.AssemblyReference.cache
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.AssemblyInfoInputs.cache
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.AssemblyInfo.cs
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.csproj.CoreCompileInputs.cache
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.dll
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\refint\Scrum.Infra.CrossCutting.IoC.dll
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\Scrum.Infra.CrossCutting.IoC.pdb
+C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\src\Scrum.Infra.CrossCutting.IoC\obj\Debug\net7.0\ref\Scrum.Infra.CrossCutting.IoC.dll
