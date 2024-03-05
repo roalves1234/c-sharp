@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Scrum</RootNamespace>
     <AssemblyName>Scrum</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -67,14 +68,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Comum\Ambiente.cs" />
-    <Compile Include="Comum\Comum.cs" />
-    <Compile Include="Controls\SprintControl.cs" />
-    <Compile Include="Daos\DaoRetrospectiva.cs" />
-    <Compile Include="Daos\DaoSprint.cs" />
     <Compile Include="Presenters\SprintPresenter.cs" />
     <Compile Include="Presenters\SprintAtualPresenter.cs" />
-    <Compile Include="Controls\RetrospectivaControl.cs" />
     <Compile Include="Presenters\RetrospectivaPresenter.cs" />
     <Compile Include="Views\SprintView.cs">
       <SubType>Form</SubType>
@@ -94,8 +89,6 @@
     <Compile Include="Views\ProductBacklogView.Designer.cs">
       <DependentUpon>ProductBacklogView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\PartControl.cs" />
-    <Compile Include="Daos\DaoTarefa.cs" />
     <Compile Include="Views\FormKanban.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,9 +107,6 @@
     <Compile Include="Views\FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Retrospectiva.cs" />
-    <Compile Include="Models\Sprint.cs" />
-    <Compile Include="Models\Tarefa.cs" />
     <Compile Include="Presenters\PartPresenter.cs" />
     <Compile Include="Views\PartView.cs">
       <SubType>UserControl</SubType>
@@ -124,13 +114,9 @@
     <Compile Include="Views\PartView.Designer.cs">
       <DependentUpon>PartView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\ProductBacklogControl.cs" />
     <Compile Include="Presenters\ProductBacklogPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Comum\ScrumIntf.cs" />
-    <Compile Include="Models\ScrumMap.cs" />
-    <Compile Include="Validacoes\ScrumValidacao.cs" />
     <EmbeddedResource Include="Views\FormKanban.resx">
       <DependentUpon>FormKanban.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,6 +146,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -176,9 +163,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TesteClassLibrary\TesteClassLibrary.csproj">
-      <Project>{972c02ef-e743-451d-aad3-c12f8e43dc7d}</Project>
-      <Name>TesteClassLibrary</Name>
+    <ProjectReference Include="..\Source\Scrum.Core\Scrum.Core.csproj">
+      <Project>{af01162c-0646-4a1e-9523-7355d03b1af9}</Project>
+      <Name>Scrum.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

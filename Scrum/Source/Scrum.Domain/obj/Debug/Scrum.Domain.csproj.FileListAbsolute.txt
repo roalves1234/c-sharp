@@ -1,0 +1,6 @@
+D:\Rodrigo\GitHub\c-sharp\Scrum\Source\Scrum.Domain\bin\Debug\Scrum.Domain.dll
+D:\Rodrigo\GitHub\c-sharp\Scrum\Source\Scrum.Domain\bin\Debug\Scrum.Domain.pdb
+D:\Rodrigo\GitHub\c-sharp\Scrum\Source\Scrum.Domain\obj\Debug\Scrum.Domain.csproj.AssemblyReference.cache
+D:\Rodrigo\GitHub\c-sharp\Scrum\Source\Scrum.Domain\obj\Debug\Scrum.Domain.csproj.CoreCompileInputs.cache
+D:\Rodrigo\GitHub\c-sharp\Scrum\Source\Scrum.Domain\obj\Debug\Scrum.Domain.dll
+D:\Rodrigo\GitHub\c-sharp\Scrum\Source\Scrum.Domain\obj\Debug\Scrum.Domain.pdb

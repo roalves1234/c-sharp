@@ -1,0 +1,3 @@
+D:\Rodrigo\GitHub\c-sharp\Scrum\Source\Scrum.Core\obj\Debug\Scrum.Core.csproj.AssemblyReference.cache
+D:\Rodrigo\GitHub\c-sharp\Scrum\Source\Scrum.Core\obj\Debug\Scrum.Core.csproj.CoreCompileInputs.cache
+D:\Rodrigo\GitHub\c-sharp\Scrum\Source\Scrum.Core\obj\Debug\Scrum.Core.csproj.ResolveComReference.cache

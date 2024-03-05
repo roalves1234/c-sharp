@@ -1,0 +1,2 @@
+D:\Rodrigo\GitHub\c-sharp\Scrum\Source\Scrum.Services\obj\Debug\Scrum.Services.csproj.AssemblyReference.cache
+D:\Rodrigo\GitHub\c-sharp\Scrum\Source\Scrum.Services\obj\Debug\Scrum.Services.csproj.CoreCompileInputs.cache
