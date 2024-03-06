@@ -7,14 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FluentNHibernate.Cfg;
-using FluentNHibernate.Cfg.Db;
 using NHibernate;
 using NHibernate.Criterion;
 using NHibernate.Tool.hbm2ddl;
 using Remotion.Linq.Parsing.Structure.IntermediateModel;
 using Scrum.Model;
-using ScrumValidacao;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Scrum

@@ -90,3 +90,12 @@ C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\Scrum\obj\Debu
 C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\Scrum\obj\Debug\Scrum.pdb
 C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\Scrum\bin\Debug\TesteClassLibrary.dll
 C:\Users\Desenvolvedor\Documents\Rodrigo\c#\Projeto\c-sharp\Scrum\Scrum\bin\Debug\TesteClassLibrary.pdb
+D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\bin\Debug\Scrum.Core.dll
+D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\bin\Debug\Scrum.Domain.dll
+D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\bin\Debug\Scrum.Infra.Data.dll
+D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\bin\Debug\Scrum.Services.dll
+D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\bin\Debug\Scrum.Core.pdb
+D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\bin\Debug\Scrum.Domain.pdb
+D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\bin\Debug\Scrum.Infra.Data.pdb
+D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\bin\Debug\Scrum.Infra.Data.dll.config
+D:\Rodrigo\GitHub\c-sharp\Scrum\Scrum\bin\Debug\Scrum.Services.pdb

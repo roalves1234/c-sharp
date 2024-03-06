@@ -25,7 +25,6 @@ namespace Scrum
                 column.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             return this; 
         }
-
         public ManipulacaoGrid SetNomeColuna(string nomeColuna)
         {
             this.nomeColuna = nomeColuna;

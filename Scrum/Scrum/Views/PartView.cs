@@ -7,15 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using NHibernate.Loader.Entity;
 using Scrum.Model;
-using FluentNHibernate.Cfg;
-using FluentNHibernate.Cfg.Db;
-using NHibernate;
-using NHibernate.Criterion;
-using NHibernate.Tool.hbm2ddl;
 using Remotion.Linq.Parsing.Structure.IntermediateModel;
-using ScrumValidacao;
 using System.Runtime.ConstrainedExecution;
 
 namespace Scrum

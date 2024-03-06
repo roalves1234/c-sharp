@@ -6,12 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
-using NHibernate;
 using NHibernate.Criterion;
 using NHibernate.Tool.hbm2ddl;
 using Scrum.Model;
 
-namespace Scrum.Infra.Data.Connection
+namespace Scrum
 {
     public class ConexaoBanco
     {

@@ -7,7 +7,6 @@ using NHibernate;
 using Scrum.Model;
 using Scrum;
 using System.ComponentModel;
-using System.Windows.Forms;
 
 namespace Scrum
 {
