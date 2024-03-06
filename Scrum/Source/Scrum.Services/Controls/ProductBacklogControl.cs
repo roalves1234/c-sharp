@@ -32,15 +32,18 @@ namespace Scrum
         public Tarefa TarefaAtual
         {
             get { return (tarefaAtual); }
-            private set { tarefaAtual = value; }
         }
         public void SalvarTarefaAtual()
         {
+            if ((tarefaAtual.Descricao == null) || (tarefaAtual.Descricao.Trim() == ""))
+                throw new Exception("A descrição precisa estar preenchida");
+            if (tarefaAtual.Pontuacao <= 0)
+                throw new Exception("A pontuação precisa ser maior que zero");
+
             Dao.Persistir(tarefaAtual);
 
-            if ((listaTarefa.Last() != null) && (!listaTarefa.Last().Existe))
+            if ((listaTarefa.Count != 0) && (!listaTarefa.Last().Existe))
                 listaTarefa.Remove(listaTarefa.Last());
-
             if (!listaTarefa.Contains(tarefaAtual))
                 listaTarefa.Add(tarefaAtual);
         }

@@ -12,6 +12,7 @@ namespace Scrum.Model
         {
             Data = DateTime.Now.Date;
             Hora = DateTime.Now.TimeOfDay;
+            Status = "Planejamento";
         }
         public virtual int IdSprint { get; set; }
         public virtual string Descricao { get; set; }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -74,10 +75,17 @@ namespace Scrum
         }
         public void SalvarSprintAtual()
         {
-            control.SalvarSprintAtual();
-            SetModoVisualizacao();
-            DoGridBind();
-            SprintAtualPresenter.GetInstance().Refresh();
+            try
+            {
+                control.SalvarSprintAtual();
+                SetModoVisualizacao();
+                DoGridBind();
+                SprintAtualPresenter.GetInstance().Refresh();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
         public void EliminarSprintAtual()
         {
@@ -86,11 +94,6 @@ namespace Scrum
                 control.EliminarSprintAtual();
                 DoGridBind();
             }
-        }
-        public void ConverterEmTarefa()
-        {
-            control.ConverterEmTarefa();
-            DoGridBind();
         }
     }
 }

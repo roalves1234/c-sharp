@@ -8,6 +8,7 @@ using Scrum.Model;
 using Scrum;
 using System.ComponentModel;
 using NHibernate.Criterion;
+using NHibernate.AdoNet;
 
 namespace Scrum
 {
@@ -35,11 +36,13 @@ namespace Scrum
         }
         public void SalvarSprintAtual()
         {
+            if ((ListaSprint.Count > 0) && (listaSprint.First().Existe) && (!listaSprint.Contains(sprintAtual)))
+                throw new Exception("Antes de inserir uma nova Sprint é necessário encerrar a atual");
+
             Dao.Persistir(sprintAtual);
 
-            if ((listaSprint.Last() != null) && (!listaSprint.Last().Existe))
+            if ((listaSprint.Count != 0) && (!listaSprint.Last().Existe))
                 listaSprint.Remove(listaSprint.Last());
-
             if (!listaSprint.Contains(sprintAtual))
                 listaSprint.Add(sprintAtual);
         }
@@ -48,11 +51,6 @@ namespace Scrum
             Dao.Eliminar(sprintAtual);
             listaSprint.Remove(sprintAtual);
         }
-        public void ConverterEmTarefa()
-        {
-            new DaoTarefa().Persistir(new Tarefa("Sprint: " + sprintAtual.Descricao));
-            this.EliminarSprintAtual();
-        }
         public SprintControl SetSprintAtual(Sprint value)
         {
             sprintAtual = value;
@@ -60,8 +58,7 @@ namespace Scrum
         }
         public void DoNovaSprint()
         {
-            var sprint = new Sprint();
-            SetSprintAtual(sprint);
+            SetSprintAtual(new Sprint());
         }
     }
 }

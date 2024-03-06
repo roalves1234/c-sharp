@@ -37,7 +37,7 @@ namespace Scrum
         {
             Dao.Persistir(retrospectivaAtual);
 
-            if ((listaRetrospectiva.Last() != null) && (!listaRetrospectiva.Last().Existe))
+            if ((listaRetrospectiva.Count != 0) && (!listaRetrospectiva.Last().Existe))
                 listaRetrospectiva.Remove(listaRetrospectiva.Last());
 
             if (!listaRetrospectiva.Contains(retrospectivaAtual))

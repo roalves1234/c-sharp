@@ -90,7 +90,6 @@ namespace Scrum
             if (MessageBox.Show("Confirma a eliminação?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 presenter.EliminarRetrospectivaAtual();
         }
-
         private void btnConverterTarefa_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Confirma a conversão em tarefa?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)

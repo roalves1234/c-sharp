@@ -69,7 +69,7 @@ namespace Scrum
         }
         private void inserirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Só é possível iniciar uma nova Sprint com a finalização da anterior");
+            presenter.DoNovaSprint();
         }
         public void ExibirPersistencia(bool sim)
         {

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using NHibernate.Criterion;
 using NHibernate;
 using Scrum.Model;
+using FluentNHibernate.Conventions;
 
 namespace Scrum
 {
@@ -59,7 +60,14 @@ namespace Scrum
         public Sprint GetAtual()
         {
             string[] listaStatus = { "Planejamento", "Execucao" };
-            return (this.ObterLista(Restrictions.Disjunction().Add(Restrictions.In(Projections.Property<Tarefa>(t => t.Status), listaStatus))).First());
+            Sprint sprint;
+            var lista = this.ObterLista(Restrictions.Disjunction().Add(Restrictions.In(Projections.Property<Tarefa>(t => t.Status), listaStatus)));
+            if (!lista.IsEmpty())
+                sprint = lista.First();
+            else
+                sprint = new Sprint();
+
+            return (sprint);
         }
     }
 }

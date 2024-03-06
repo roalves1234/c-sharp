@@ -77,9 +77,16 @@ namespace Scrum
         }
         public void SalvarTarefAtual()
         {
-            control.SalvarTarefaAtual();
-            SetModoVisualizacao();
-            DoGridBind();
+            try
+            {
+                control.SalvarTarefaAtual();
+                SetModoVisualizacao();
+                DoGridBind();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
         public void EliminarTarefaAtual()
         {
