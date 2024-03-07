@@ -36,6 +36,8 @@ namespace Scrum
         }
         public void SalvarSprintAtual()
         {
+            if ((sprintAtual.Descricao == null) || (sprintAtual.Descricao.Trim() == ""))
+                throw new Exception("A descrição precisa estar preenchida");
             if ((ListaSprint.Count > 0) && (listaSprint.First().Existe) && (!listaSprint.Contains(sprintAtual)))
                 throw new Exception("Antes de inserir uma nova Sprint é necessário encerrar a atual");
 

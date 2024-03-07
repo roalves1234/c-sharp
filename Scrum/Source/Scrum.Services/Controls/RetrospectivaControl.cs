@@ -35,6 +35,9 @@ namespace Scrum
         }
         public void SalvarRetrospectivaAtual()
         {
+            if ((retrospectivaAtual.Descricao == null) || (retrospectivaAtual.Descricao.Trim() == ""))
+                throw new Exception("A descrição precisa estar preenchida");
+
             Dao.Persistir(retrospectivaAtual);
 
             if ((listaRetrospectiva.Count != 0) && (!listaRetrospectiva.Last().Existe))

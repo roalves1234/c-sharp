@@ -77,9 +77,16 @@ namespace Scrum
         }
         public void SalvarRetrospectivaAtual()
         {
-            control.SalvarRetrospectivaAtual();
-            SetModoVisualizacao();
-            DoGridBind();
+            try
+            {
+                control.SalvarRetrospectivaAtual();
+                SetModoVisualizacao();
+                DoGridBind();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
         public void EliminarRetrospectivaAtual()
         {
